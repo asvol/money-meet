@@ -2,7 +2,7 @@
 
 Программа подсчета времени и стоимости совещаний
 
-![img](img\img1.png)
+![img](img/img.png)
 
 ## Versioning
 
