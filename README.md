@@ -1,6 +1,6 @@
 # MoneyMeeting
 
-Программа подсчета времени и стоимости совещаний
+Allows you to visually show the cost of a meeting. Just enter total salary per month for all employees end press 'space'.
 
 ![img](screenshot.png)
 
