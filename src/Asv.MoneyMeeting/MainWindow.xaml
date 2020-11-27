@@ -18,7 +18,7 @@
             </Viewbox>
         </StackPanel>
         <StackPanel Width="150" Margin="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" Visibility="{Binding IsSettingsOpened,Converter={StaticResource BoolToVis}}">
-            <TextBlock Text="Общая сумма з\п в месяц"/>
+            <TextBlock Text="Total salary per month"/>
             <TextBox Background="Black" Foreground="White" KeyDown="UIElement_OnKeyDown" Text="{Binding TotalSumm, UpdateSourceTrigger=PropertyChanged}"/>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -33,29 +33,29 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="Секунда"/>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Second cost"/>
                 <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding RubSecString}"/>
-                <TextBlock Grid.Row="0" Grid.Column="3" Text=" руб."/>
-                <TextBlock Grid.Row="1" Grid.Column="0" Text="Минута"/>
+                <TextBlock Grid.Row="0" Grid.Column="3" Text=" $"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Minute cost"/>
                 <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding RubMinString}"/>
-                <TextBlock Grid.Row="1" Grid.Column="3" Text=" руб."/>
-                <TextBlock Grid.Row="2" Grid.Column="0" Text="Час"/>
+                <TextBlock Grid.Row="1" Grid.Column="3" Text=" $"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Hour cost"/>
                 <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding RubHourString}"/>
-                <TextBlock Grid.Row="2" Grid.Column="3" Text=" руб."/>
-                <TextBlock Grid.Row="3" Grid.Column="0" Text="День"/>
+                <TextBlock Grid.Row="2" Grid.Column="3" Text=" $"/>
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Day cost"/>
                 <TextBlock Grid.Row="3" Grid.Column="2" Text="{Binding RubDayString}"/>
-                <TextBlock Grid.Row="3" Grid.Column="3" Text=" руб."/>
+                <TextBlock Grid.Row="3" Grid.Column="3" Text=" $"/>
             </Grid>
         </StackPanel>
         <Viewbox local:EnableDragHelper.EnableDrag="True" >
             <Grid>
                 <StackPanel Margin="50" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <TextBlock HorizontalAlignment="Center"  Text="Прошло" Foreground="White" FontFamily="Segoe UI Light" FontSize="40"/>
+                    <TextBlock HorizontalAlignment="Center"  Text="Passed" Foreground="White" FontFamily="Segoe UI Light" FontSize="40"/>
                     <TextBlock HorizontalAlignment="Center" Text="{Binding TimeLeftString}" Foreground="White" FontFamily="Segoe UI Light" FontSize="100"/>
-                    <TextBlock HorizontalAlignment="Center"  Text="Потрачено" Foreground="White" FontFamily="Segoe UI Light" FontSize="40"/>
+                    <TextBlock HorizontalAlignment="Center"  Text="Spended" Foreground="White" FontFamily="Segoe UI Light" FontSize="40"/>
                     <TextBlock HorizontalAlignment="Center" Text="{Binding SummLeftString}" Foreground="White" FontFamily="Segoe UI Light" FontSize="100"/>
                 </StackPanel>
-                <TextBlock Margin="5" VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="Для паузы\продолжения нажмите 'пробел'" Foreground="Gray" FontFamily="Segoe UI Light" FontSize="15"/>
+                <TextBlock Margin="5" VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="Play\pause press 'space' " Foreground="Gray" FontFamily="Segoe UI Light" FontSize="15"/>
             </Grid>
 
         </Viewbox>

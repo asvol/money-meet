@@ -9,7 +9,7 @@ namespace Asv.MoneyMeeting
     {
         private decimal _totalSumm;
         private string _timeLeftString = "0:00";
-        private string _summLeftString = "0 руб.";
+        private string _summLeftString = "0 $";
         private Timer _timer;
         private DateTime _lastTickDateTime;
         private TimeSpan _spendTime;
@@ -45,7 +45,7 @@ namespace Asv.MoneyMeeting
             if (IsPause) return;
             _spendTime += timeSpan;
             TimeLeftString = $"{_spendTime.TotalMinutes:F0}:{_spendTime.Seconds:D2}";
-            SummLeftString = $"{_rubSec * (decimal)_spendTime.TotalSeconds:F0} руб.";
+            SummLeftString = $"{_rubSec * (decimal)_spendTime.TotalSeconds:F0} $";
         }
 
         public void Start()
